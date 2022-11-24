@@ -8,6 +8,26 @@
 
   gtag('config', 'G-ZGRP8GEBL0');
 </script>
+	<?php
+/**
+ * Uninstallation script for the plugin.
+ *
+ * @package   Google\Site_Kit
+ * @copyright 2021 Google LLC
+ * @license   https://www.apache.org/licenses/LICENSE-2.0 Apache License 2.0
+ * @link      https://sitekit.withgoogle.com
+ */
+
+// Prevent execution from directly accessing the file.
+if ( ! defined( 'WP_UNINSTALL_PLUGIN' ) ) {
+	exit;
+}
+
+// Load plugin main file to bootstrap infrastructure and add hooks.
+require_once dirname( __FILE__ ) . '/google-site-kit.php';
+
+// Fire action to trigger uninstallation logic.
+do_action( 'googlesitekit_uninstallation' );
 <meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="robots" content="noindex, nofollow" />
 <title>Skyeng 2023</title>
 <link rel="dns-prefetch" href="https://www.google-analytics.com"><link href="css/190627.1669108054.css" rel="stylesheet">
