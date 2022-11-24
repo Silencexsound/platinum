@@ -1,2 +1,0 @@
-# platinum
-REG.RU Blog
